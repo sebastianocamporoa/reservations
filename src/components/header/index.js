@@ -1,18 +1,14 @@
 import {
   Container,
   Logo,
-  Rota,
   ButtonLogin,
   Conjunto,
   Items,
   MobileNav,
-  Conjunto2,
-  Redes,
+  Ruta,
 } from "./styled";
 import Hamburger from "../../assets/images/icon-hamburger.svg";
 import Close from "../../assets/images/icon-close.svg";
-import facebook from "./../../assets/images/icon-facebook.svg";
-import twitter from "./../../assets/images/icon-twitter.svg";
 import logo from "./../../assets/images/logo-bookmark.svg";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -50,32 +46,22 @@ export default function Header() {
       </MobileNav>
       <Conjunto navToggle={navToggle}>
         <Items>
-          <Link to="/features">
-            <Rota>{i18n.t("rutas.features")}</Rota>
+          <Link to="/">
+            <Ruta>{i18n.t("rutas.home")}</Ruta>
           </Link>
 
-          <Link to="/extension">
-            <Rota>{i18n.t("rutas.pricing")}</Rota>
+          <Link to="/services">
+            <Ruta>{i18n.t("rutas.services")}</Ruta>
           </Link>
 
-          <Link to="/contact">
-            <Rota>{i18n.t("rutas.contact")}</Rota>
+          <Link to="/register">
+            <Ruta>{i18n.t("rutas.register")}</Ruta>
           </Link>
 
           <ButtonLogin>
             {i18n.t("rutas.login")}
             <span></span><span></span><span></span><span></span>
           </ButtonLogin>
-
-          <Conjunto2>
-            <Redes href="https://pt-br.facebook.com/" target="_blank">
-              <Logo src={facebook} alt="logo" />
-            </Redes>
-
-            <Redes href="https://twitter.com/" target="_blank">
-              <Logo src={twitter} alt="logo" />
-            </Redes>
-          </Conjunto2>
         </Items>
       </Conjunto>
     </Container>

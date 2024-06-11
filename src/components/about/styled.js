@@ -65,7 +65,7 @@ export const Links = styled.div`
   }
 `;
 
-export const Firefox = styled.a`
+export const AboutBtn = styled.a`
   background: ${(props) => props.theme.White};
   color: ${(props) => props.theme.Dark};
   box-shadow: 0 0 0.5rem ${(props) => props.theme.Grayish};
@@ -74,7 +74,7 @@ export const Firefox = styled.a`
   }
 `;
 
-export const Chrome = styled.a`
+export const RegisterBtn = styled.a`
   color: ${(props) => props.theme.White};
   background: ${(props) => props.theme.Blue};
   border: 2px solid ${(props) => props.theme.Blue};

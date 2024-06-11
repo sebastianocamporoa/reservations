@@ -12,16 +12,6 @@ export const Items = styled.div`
   margin: 3rem;
 `;
 
-export const Conjunto2 = styled.div`
-  @media (max-width: 800px) {
-    flex-direction: row;
-    align-items: center;
-    padding-left: 1rem;
-  }
-`;
-
-export const Redes = styled.a``;
-
 export const Conjunto = styled.div`
   display: flex;
   flex-direction: row;
@@ -42,7 +32,7 @@ export const Logo = styled.img`
   margin: 3rem;
 `;
 
-export const Rota = styled.text`
+export const Ruta = styled.text`
   margin: 1.4rem;
   @media (max-width: 800px) {
     color: ${(props) => props.theme.White};

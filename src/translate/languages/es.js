@@ -2,11 +2,11 @@ const StringsComuns = {
     es: {
         components: {
             about: {
-              titulo: "Un Gestor de Marcadores Sencillo",
-              paragrafo: "Una interfaz limpia y sencilla para organizar tus sitios web favoritos. Abre una nueva pestaña del navegador y ve tus sitios cargarse al instante. Pruébalo gratis.",
+              titulo: "Simplifica tus citas",
+              paragrafo: "Gestiona tus citas y reservas fácilmente con nuestra plataforma intuitiva. Recibe notificaciones y recordatorios automáticos para nunca perder una cita.",
               buttons: {
-                chrome: "Consíguelo en Chrome",
-                firefox: "Consíguelo en Firefox",
+                register: "Regístrate Gratis",
+                about: "Descubre Más",
               },
             },
             contact: {
@@ -55,9 +55,9 @@ const StringsComuns = {
               },
             },
             rutas: {
-              features: "CARACTERÍSTICAS",
-              pricing: "PRECIOS",
-              contact: "CONTACTO",
+              home: "INICIO",
+              services: "SERVICIOS",
+              register: "REGISTRARSE",
               login: "INICIAR SESIÓN",
             },
             login: {

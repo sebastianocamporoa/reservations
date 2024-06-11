@@ -1,13 +1,13 @@
 import {
   Links,
   Container,
-  Chrome,
-  Firefox,
   ColunaImagem,
   Paragrafo,
   Titulo,
   Linha,
   Textos,
+  RegisterBtn,
+  AboutBtn,
 } from "./styled";
 import imagem from "./../../assets/images/illustration-hero.svg";
 import { i18n } from "./../../translate/i18n";
@@ -19,18 +19,16 @@ export default function About() {
           <Titulo>{i18n.t("about.titulo")}</Titulo>
           <Paragrafo>{i18n.t("about.paragrafo")}</Paragrafo>
           <Links>
-            <Chrome
-              href="https://www.google.com/intl/pt-BR/chrome/"
-              target="_blank"
+            <RegisterBtn
+              href="/register"
             >
-              {i18n.t("about.buttons.chrome")}
-            </Chrome>
-            <Firefox
-              href="https://www.mozilla.org/pt-BR/firefox/new/"
-              target="_blank"
+              {i18n.t("about.buttons.register")}
+            </RegisterBtn>
+            <AboutBtn
+              href="/aboutUs"
             >
-              {i18n.t("about.buttons.firefox")}
-            </Firefox>
+              {i18n.t("about.buttons.about")}
+            </AboutBtn>
           </Links>
         </Textos>
         <ColunaImagem>
